@@ -13,7 +13,7 @@
     ],
     "require": {
         "php":"^7.1",
-	"sabre/event": "^5.0",
+	"sabre/event": "^5.0"
     },
     "provide": {
         "phonetworks/service-events-implementation": "1.0"
