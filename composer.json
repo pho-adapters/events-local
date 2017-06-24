@@ -1,0 +1,25 @@
+{
+  "name": "pho-adapters/events-local",
+  "type": "library",
+  "description": "A development-only implementation of events adapter for the Phở stack.",
+  "homepage": "https://phonetworks.org",
+  "license": "MIT",
+  "authors": [
+        {
+            "name": "Emre Sokullu",
+            "email": "emre@phonetworks.org",
+            "homepage": "http://www.emresokullu.com"
+        }
+    ],
+    "require": {
+        "php":"^7.1"
+    },
+    "provide": {
+        "phonetworks/service-events-implementation": "1.0"
+    },
+    "autoload": {
+	     "psr-4": {
+		       "Pho\\Kernel\\Services\\Storage\\Adapters\\": ""
+	     }
+    }
+}
