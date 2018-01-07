@@ -42,7 +42,7 @@ class Local extends EventsUtils implements EventsInterface, ServiceInterface {
    */
   private $event_emitter;
 
-  public function __construct(Kernel $kernel, array $params = []) {
+  public function __construct(Kernel $kernel, string $uri = "") {
     $this->kernel = $kernel;
     $this->event_emitter = new EventEmitter();
   }
