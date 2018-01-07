@@ -66,9 +66,10 @@ class Local extends EventsUtils implements EventsInterface, ServiceInterface {
   /**
    * {@inheritdoc}
    */
-  public function on(string $event, callable $callback): void
+  public function on(string $event, callable $callback): EventsInterface
   {
     $this->event_emitter->on($event, $callback);
+    return $this;
   }
 
 }
